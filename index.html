@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다오반상-2020308001</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="questions.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="quiz-home-box custom-box show">
+        <h4>
+            <img src="logo1.jpg" alt = "Test Image" />
+            <br>Welcome to The Quiz <br>
+            <br>
+            "고급웹개발론 기말시험" <br>
+            다오반상.</h4>
+        <h4>You have 10 multiple choice questions.</h4>
+        <button type="button" class="start-quiz-btn btn">Start The Quiz</button>
+    </div>
+
+    <div class="quiz-box custom-box">
+        <div class="stats">
+            <div class="score-board">
+                <span class="score-text">Score:</span>
+                <span class="correct-answers"></span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="current-question-num" id="current-question-num">
+
+            </div>
+            <div class="question-text" id="question-text"></div>
+        </div>
+
+        <div class="option-box" id="option-box">
+
+        </div>
+        <div class="answer-description">
+
+        </div>
+        <div class="next-question">
+            <button type="button" class="next-question-btn btn">Next</button>
+            <button type="button" class="see-result-btn btn">See Result</button>
+        </div>
+    </div>
+
+    <div class="quiz-over-box custom-box">
+        <h1>Quiz Result</h1>
+        <h4>Total Questions: <span class="total-questions">3</span></h4>
+        <h4>Attempt: <span class="total-attempt"></span></h4>
+        <h4>Correct: <span class="total-correct"></span></h4>
+        <h4>Wrong: <span class="total-wrong"></span></h4>
+        <h4>Percentage: <span class="percentage"></span></h4>
+
+        <h4>Please enter your name here</h4>
+        <form class="myForm" id="myForm">
+            <label>Name:<input id="myFormName" type="text" name="name"></label>
+            <button type="submit" class="submit-name-btn btn">Submit</button>
+        </form>
+
+        <button type="button" class="start-again-quiz-btn btn">Try Again</button>
+        <button type="button" class="go-home-btn btn">Home</button>
+
+        <div class="records">
+            <h4>Record:
+                <ol id="record">
+                </ol>
+            </h4>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
